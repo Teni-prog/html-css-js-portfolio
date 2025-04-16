@@ -69,11 +69,13 @@ a:hover{
 /* HAMBURGER MENU*/
 #hamburger-nav{
     display: none;
+   
 }
 
 .hamburger-menu{
     position: relative;
     display: inline-block;
+    z-index: 50;
 }
 
 .hamburger-icon{
