@@ -736,6 +736,11 @@ footer {
   text-align: center;
 }
 
-.thumb-toolkit {
-  background: linear-gradient(135deg, #0f3443, #34e89e20, #0a2a1f);
+
+.thumb-holla {
+  background: linear-gradient(135deg, #1a0533, #6b21a8, #db2777);
+}
+
+.thumb-traci {
+  background: linear-gradient(135deg, #052e16, #166534, #15803d);
 }
