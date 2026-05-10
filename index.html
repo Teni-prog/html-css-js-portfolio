@@ -1,269 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaenquiries.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teni Ajetomobi — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaenquiries.css" />
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Teni Ajet </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Teni Ajet </div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-            <!-- /* the lines of the hamburger-menu */ -->
-                    </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profilepic.jpeg" alt="Profile Picture" class="profile-pic" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm </p>
-            <h1 class="title">Oluwateniola Ajetomobi</h1>
-            <p class="section__text__p2">Frontend Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/OLUWATENIOLA_AJETOMOBI_CV_4 (2).pdf')">
-                Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">
-                   Contact Info
-                    </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My Linkedin profile"
-                 class="icon"
-                 onclick="location.href='https://www.linkedin.com/in/oluwateniola-ajetomobi-353924203/'"
-                 />
-                 <img src="./assets/github.png" alt="My Github profile"
-                 class="icon"
-                 onclick="location.href='https://github.com/Teni-prog/'"
-                 />
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.jpeg" alt="profile picture"
-                class="about-pic" />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>2+ years <br> Frontend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>B.Sc. Software Engineering <br> M.Sc. Engineering in Technology Management and Entrepreneurship</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>I'm Ajetomobi Oluwateniola, a passionate Frontend Engineer with a strong foundation in software development and user-centric design. I hold a Bachelor’s degree in Software Engineering from Babcock University, where I graduated with a Second Class Upper, and I’m currently pursuing a Master of Engineering in Technology Management and Entrepreneurship at the University of New Brunswick, set to graduate in 2026.
 
-                        With a keen eye for detail and a deep understanding of React, JavaScript, and modern frontend technologies, I specialize in building intuitive, high-performing, and visually compelling web applications. My approach to development is driven by a passion for seamless user experiences, optimized performance, and scalable solutions.
-                        
-                        Beyond coding, I enjoy exploring innovative tech trends, refining my design aesthetics, and working on projects that challenge me to push creative and technical boundaries.
-                        
-                        Let's connect and build something great!</p>
-                </div>
-            </div>
+  <!-- DESKTOP NAV -->
+  <nav id="desktop-nav">
+    <div class="logo">teni<span class="logo-accent"></span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HAMBURGER NAV -->
+  <nav id="hamburger-nav">
+    <div class="logo">Teni<span class="logo-accent">.</span></div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="profile">
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="section__pic-container">
+      <div class="profile-pic-wrapper">
+        <img src="./assets/profilepic.jpeg" alt="Teni Ajetomobi" class="profile-pic" />
+      </div>
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title hero-name">Teni Ajetomobi</h1>
+      <p class="section__text__p2">Engineer &amp; Entrepreneur</p>
+      <p class="hero-sub">Building at the intersection of technology and human impact.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('./assets/Teni_Ajetomobi_CV.docx')">
+          Download CV
+        </button>
+        <button class="btn btn-color-2" onclick="location.href='#contact'">
+          Get in Touch
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/oluwateniola-ajetomobi-353924203/" target="_blank" class="social-link">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+        </a>
+        <a href="https://github.com/Teni-prog/" target="_blank" class="social-link">
+          <img src="./assets/github.png" alt="GitHub" class="icon" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know Me</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpeg" alt="Teni" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="details-icon">⚡</div>
+            <h3>Experience</h3>
+            <p>3+ years across tech &amp; business</p>
+          </div>
+          <div class="details-container">
+            <div class="details-icon">🎓</div>
+            <h3>Education</h3>
+            <p>B.Sc. Software Engineering<br />MEng Technology Management</p>
+          </div>
+          <div class="details-container">
+            <div class="details-icon">🌍</div>
+            <h3>Based In</h3>
+            <p>Fredericton, NB<br />Canada</p>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
-   
-    <section id="experience">
-        <h1 class="section__text__p2"> Explore My </h1>
-        <h1 class="title">Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>HTML5</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>React JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article> -->
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article> -->
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>Java</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article> -->
-                        <!-- <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article> -->
-                    </div>
-                </div>
-            </div>
+        <div class="text-container">
+          <p>
+            I'm Teni — a builder who moves between code and strategy. I hold a BSc in Software Engineering
+            from Babcock University and I'm completing my MEng in Technology Management &amp; Entrepreneurship
+            at the University of New Brunswick (graduating 2026).
+          </p>
+          <br />
+          <p>
+            I've shipped products as a founding engineer, conducted primary market research, pitched to investors,
+            and designed systems that solve real problems — particularly for communities underserved by mainstream tech.
+            I'm most excited by the intersection of technology and human impact: where a well-designed solution meets
+            a deeply understood problem.
+          </p>
+          <br />
+          <p>
+            Currently: Founding engineer at Coog, accelerator participant, and building a Lagos-themed mobile game on the side.
+          </p>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project.png" alt="Project" class="project-img"/>
-                </div>
-                <h2 class="experience-sub-title project-title">Project One<h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Teni-prog/Feastly.git'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Teni-prog/Feastly.git'">Live Demo</button>
-                    </div>
-            </div>
-            <!-- <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project.png" alt="Project" class="project-img"/>
-                </div>
-                <h2 class="experience-sub-title project-title">Project One<h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Teni-prog/Feastly.git'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Teni-prog/Feastly.git'">Live Demo</button>
-                    </div>
-            </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="experience">
+    <p class="section__text__p1">What I Bring</p>
+    <h1 class="title">Skills &amp; Expertise</h1>
+    <div class="skills-grid">
+
+      <div class="skills-column">
+        <h2 class="experience-sub-title">
+          <span class="skill-cat-dot tech-dot"></span> Technical
+        </h2>
+        <div class="skills-pills">
+          <span class="pill">React.js</span>
+          <span class="pill">Next.js</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Python</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">Supabase</span>
+          <span class="pill">HTML &amp; CSS</span>
+          <span class="pill">Git / GitHub</span>
+          <span class="pill">Figma</span>
+          <span class="pill">Machine Learning</span>
         </div>
+      </div>
+
+      <div class="skills-column">
+        <h2 class="experience-sub-title">
+          <span class="skill-cat-dot biz-dot"></span> Business &amp; Strategy
+        </h2>
+        <div class="skills-pills">
+          <span class="pill pill-biz">Market Research</span>
+          <span class="pill pill-biz">Business Development</span>
+          <span class="pill pill-biz">Product Strategy</span>
+          <span class="pill pill-biz">Project Management</span>
+          <span class="pill pill-biz">Stakeholder Engagement</span>
+          <span class="pill pill-biz">Agile / Scrum</span>
+          <span class="pill pill-biz">Data Analysis</span>
+          <span class="pill pill-biz">Go-to-Market Strategy</span>
+          <span class="pill pill-biz">Entrepreneurship</span>
         </div>
-        
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:ajetomobiteniola@gmail.com">ajetomobiteniola@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/oluwateniola-ajetomobi-353924203/">LinkedIn</a></p>
-            </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section__text__p1">What I've Built</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-grid">
+
+      <!-- Job Application Toolkit -->
+     <div class="project-card">
+  <div class="project-thumb thumb-toolkit">
+    <div class="project-thumb-text">ApplyAI</div>
+    <span class="coming-soon-badge">In Development</span>
+  </div>
+  <div class="project-body">
+    <div class="project-tags">
+      <span class="tag">AI</span>
+      <span class="tag">Next.js</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">Supabase</span>
+    </div>
+    <h2 class="project-title">ApplyAI — Job Application Toolkit</h2>
+    <p class="project-desc">Paste a job description, upload your CV, and get a tailored cover letter, key talking points, and likely interview questions — instantly. Built with the Anthropic API and Supabase for session history.</p>
+    <div class="btn-container project-btns">
+      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Teni-prog/'">GitHub</button>
+    </div>
+  </div>
+</div>
+
+      <!-- ML Waste Classifier -->
+      <div class="project-card">
+        <div class="project-thumb thumb-ml">
+          <div class="project-thumb-text">97.31%</div>
         </div>
-        
-           
-       
-    </section>
-    <footer >
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <br />
-        <!-- <br /> -->
-      
-        <p>Copyright &#169; 2025 Ajetomobi Oluwateniola.</p>
-    </footer>
-    <script src="script.js"></script>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Python</span>
+            <span class="tag">CNN</span>
+          </div>
+          <h2 class="project-title">Waste Classification System</h2>
+          <p class="project-desc">A convolutional neural network built with transfer learning (MobileNetV2) achieving 97.31% classification accuracy. Developed as part of graduate coursework in Machine Learning at UNB.</p>
+          <div class="btn-container project-btns">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/chrisfejiro/BinaryClassification-Recyclables-and-non-Recyclables-.git'">GitHub</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lagos Street Runner -->
+      <div class="project-card">
+        <div class="project-thumb thumb-lagos">
+          <div class="project-thumb-text">Lagos Street Runner</div>
+          <span class="coming-soon-badge">Coming Soon</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Game Dev</span>
+            <span class="tag">In Progress</span>
+          </div>
+          <h2 class="project-title">Lagos Street Runner</h2>
+          <p class="project-desc">A mobile endless runner set in the vibrant streets of Lagos — weaving through danfos, market stalls, and chaos. Currently in early design phase. Interface and mechanics in progress.</p>
+          <div class="btn-container project-btns">
+            <button class="btn btn-color-2 project-btn" style="opacity:0.5;cursor:default;">In Development</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Little Halo -->
+      <div class="project-card">
+        <div class="project-thumb thumb-halo">
+          <div class="project-thumb-text">●</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Startup</span>
+            <span class="tag">Stealth</span>
+          </div>
+          <h2 class="project-title">Stealth Platform — Childcare Tech</h2>
+          <p class="project-desc">An early-stage platform addressing a gap in the childcare market for newcomer families in Atlantic Canada. Built with a matching algorithm and full booking system. Details available on request.</p>
+          <div class="btn-container project-btns">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#contact'">Get in Touch</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section__text__p1">Let's Connect</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email" class="icon contact-icon" />
+        <p><a href="mailto:ajetomobiteniola@gmail.com">ajetomobiteniola@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/oluwateniola-ajetomobi-353924203/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <ul class="nav-links footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="footer-copy">© 2025 Teni Ajetomobi — Built with intention.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
